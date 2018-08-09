@@ -10,7 +10,9 @@ version: 0.0.0.{build}
 # Or if various strings are found in the commit message: updated readme, update readme, update docs, update version, update appveyor
 skip_commits:
   files:
+    - CHANGELOG.md
     - README.md
+    - RELEASENOTES.md
   message: /updated readme.*|update readme.*s|update docs.*|update version.*|update appveyor.*/
 
 # There's no need to alter the build number for a Pull Request (PR) since they don't modify anything

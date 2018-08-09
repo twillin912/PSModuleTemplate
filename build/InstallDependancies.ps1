@@ -1,5 +1,5 @@
 [string[]]$PackageProviders = @('NuGet', 'PowerShellGet')
-[string[]] $PowerShellModules = @( 'Pester', 'Posh-Git', 'PlatyPS', 'InvokeBuild', 'PSScriptAnalyzer')
+[string[]] $PowerShellModules = @('BuildHelpers', 'Pester', 'Posh-Git', 'PlatyPS', 'InvokeBuild', 'PSScriptAnalyzer')
 
 
 # Line break for readability in AppVeyor console
