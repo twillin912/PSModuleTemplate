@@ -11,7 +11,7 @@ Write-Host -Object ''
 
 Set-BuildEnvironment -Force
 
-Get-Item -Path "env:*"
+Get-Item -Path "env:BH*"
 
 if ($Task -eq 'Init') {
     return
