@@ -11,6 +11,8 @@ Write-Host -Object ''
 
 Set-BuildEnvironment -Force
 
+Get-Item -Path "env:*"
+
 #Invoke-Build -Task $Task
 
 if ($Task -eq 'Pester') {
