@@ -28,7 +28,7 @@ environment:
 
 # Install NuGet to interact with the PowerShell Gallery
 install:
-  - ps: . .\build\InstallDependancies.ps1
+  - ps: . .\build.ps1 -Task Init
 
 test_script:
   - ps: $res = Invoke-Pester -Path ".\tests" -OutputFormat NUnitXml -OutputFile TestsResults.xml -PassThru

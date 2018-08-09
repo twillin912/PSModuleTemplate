@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param (
-    [ValidateSet('Build','Help','Pester','Test')]
+    [ValidateSet('Init','Build','Help','Pester','Test')]
     [string] $Task
 )
 
@@ -13,6 +13,9 @@ Set-BuildEnvironment -Force
 
 Get-Item -Path "env:*"
 
+if ($Task -eq 'Init') {
+    return
+}
 #Invoke-Build -Task $Task
 
 if ($Task -eq 'Pester') {
